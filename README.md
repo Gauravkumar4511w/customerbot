@@ -1,20 +1,19 @@
-# React + Vite
+# CustomerBot landing page
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A responsive React landing page for [CustomerBot](https://customerbot.co), built with Vite and Tailwind CSS. It includes a generated hero illustration, product previews, a local interactive chat preview, mobile navigation, pricing toggle, and FAQ accordion.
 
-Currently, two official plugins are available:
+## Run locally
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+```bash
+npm install
+npm run dev
+```
 
-## React Compiler
+## Check and build
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+```bash
+npm run lint
+npm run build
+```
 
-Note: This will impact Vite dev & build performances.
-You can also try [the experimental native React Compiler support in plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md#rust-react-compiler) by using `compiler: true` in the plugin options instead of using the Babel plugin.
-
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
-# customerbot
+The page links sign-up and log-in actions to customerbot.co. The chat preview demonstrates common responses in the browser; it is not connected to a backend assistant. The hero URL form forwards the entered website to the CustomerBot sign-up page as a `website` query parameter.
